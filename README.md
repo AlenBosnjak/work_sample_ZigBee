@@ -12,7 +12,7 @@ My task was to develop the part of the graphical interface where the user could 
 ### roomlogic ###  
 The room logic pack contains classes that represent the basic building blocks of rooms. The basic logic is represented by the classes:
 
-* One room consists of many walls.
+* One **room** consists of many walls.
 * One wall consists of many points.
 * One Point consists of two coordinates.
 * One Sensor consists of two coordinates.

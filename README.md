@@ -10,19 +10,19 @@ Therefore we developed a solution that measures the air quality and informs the 
 My task was to develop the part of the graphical interface where the user could draw and edit the rooms and place the sensors. The input works via mouse clicks on the provided canvas. The classes where structured in two packages:
 
 ### roomlogic ###  
-The room logic pack contains classes that represent the basic building blocks of rooms. The basic logic is represented by the classes:
+The room logic pack contains classes that represent the basic building blocks of rooms. The basic logic is represented by several classes:
 
-* One **room** consists of many walls.
-* One wall consists of many points.
-* One Point consists of two coordinates.
-* One Sensor consists of two coordinates.
-* WallCreator contains the rules that must be followed while creating the walls.
+* One ***room*** consists of many walls.
+* One ***wall*** consists of many points.
+* One ***point*** consists of two coordinates.
+* One ***sensor*** consists of two coordinates.
+* ***WallCreator*** contains the rules that must be followed while creating the walls.
 * Additionally the classes contain Methods which would provide information about the positioning of the objects in relation to a given point of the canvas.
 
 ### drawer ###  
 Classes that draw lines, points etc. onto the screen. They are several Drawer classes that are based on the state of the application. Different state leads to different visual feedback.
 
-* For example, the DeleteWallDrawer would change the color of the wall closest to the mouse pointer, signaling which wall would be removed on click.
-* StartingWallDrawer would indicate which points can be selected to start a new Wall.
-* EndingWallDrawer shows a live preview of what the wall would look like when the user clicks to mark the end of the wall.
-* FinishedRoomDrawer adds the wall permanently to the canvas.
+* For example, the ***DeleteWallDrawer*** would change the color of the wall closest to the mouse pointer, signaling which wall would be removed on click.
+* ***StartingWallDrawer*** would indicate which points can be selected to start a new Wall.
+* ***EndingWallDrawer*** shows a live preview of what the wall would look like when the user clicks to mark the end of the wall.
+* ***FinishedRoomDrawer*** adds the wall permanently to the canvas.

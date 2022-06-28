@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sensorplacing.PlaceSensorController">  
+   <children>
+      <MenuButton fx:id="sensors" layoutX="519.0" layoutY="31.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Sensor">
+        <items>
+        
+          <MenuItem mnemonicParsing="false" onAction="#setSensor1" text="Sensor 1" />
+          <MenuItem mnemonicParsing="false" onAction="#setSensor2" text="Sensor 2" />
+          <MenuItem mnemonicParsing="false" onAction="#setSensor3" text="Sensor 3" />
+
+        </items>
+      </MenuButton>
+      <AnchorPane fx:id="Backround2" layoutX="27.0" layoutY="30.0" prefHeight="300.0" prefWidth="485.0" style="-fx-background-color: #ffffff;" />
+      <Line endX="13.5" endY="195.5" layoutX="14.0" layoutY="135.0" startX="13.0" startY="-105.00001525878906" />
+      <Line endX="-5.5" endY="114.5" layoutX="518.0" layoutY="216.0" startX="-5.29296875" startY="-186.70712280273438" />
+      <Line endX="384.0" layoutX="128.0" layoutY="330.0" startX="-100.0" />
+      <Line endX="383.0" endY="1.0" layoutX="129.0" layoutY="29.0" startX="-102.70709228515625" startY="0.292877197265625" />
+      <Button layoutX="195.0" layoutY="348.0" mnemonicParsing="false"  text="Sensorposition speichern" />
+      <MenuButton layoutX="519.0" layoutY="99.0" mnemonicParsing="false" text="remove sensor">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#removeSensor1" text="Sensor 1" />
+          <MenuItem mnemonicParsing="false" onAction="#removeSensor2" text="Sensor 2" />
+          <MenuItem mnemonicParsing="false" onAction="#removeSensor3" text="Sensor 3" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

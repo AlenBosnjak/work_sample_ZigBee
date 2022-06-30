@@ -23,6 +23,6 @@ The room logic pack contains classes that represent the basic building blocks of
 Classes that draw lines, points etc. onto the screen. They are several Drawer classes that are based on the state of the application. Different state leads to different visual feedback.
 
 * For example, the ***DeleteWallDrawer*** would change the color of the wall closest to the mouse pointer, signaling which wall would be removed on click.
-* ***StartingWallDrawer*** would indicate which points can be selected to start a new Wall.
+* ***StartingWallDrawer*** indicates which points can be selected to start a new Wall.
 * ***EndingWallDrawer*** shows a live preview of what the wall would look like when the user clicks to mark the end of the wall.
 * ***FinishedRoomDrawer*** adds the wall permanently to the canvas.
